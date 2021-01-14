@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %> 
+<body>
+    <%- include('./partials/nav') %> 
+    <%- include('./partials/header') %>
+    <div class="detalle-container">
+        <img src="https://th.bing.com/th/id/OIP.EVvI--lh80WiwVrYOEppmwHaEw?pid=Api&rs=1" alt="">      
+        <div class="text">
+            <h4 class="detallado"><%= id.nombre %> </h4><h5 class="price"><%= id.precio %> </h5>
+            <% id.descripcion == undefined ? id.descripcion = 'Plato típico' : ''%>
+            <p class="ps-text-grey detallado"><%= id.descripcion %> </p>
+        </div>
+    </div>     
+    <%- include('./partials/footer') %>
+</body>
+</html>
